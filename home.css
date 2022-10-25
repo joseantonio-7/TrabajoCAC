@@ -16,6 +16,24 @@ i{
   padding: 5px;
   margin: 0%;
 }
+
+#carrito{
+  position: relative;
+  left: 60%;
+  bottom: 120px;
+  color:rgb(44, 44, 44);
+  padding: 10px;
+  border-style: solid;
+  border-width: 0.1mm;
+  border-color: lightgray;
+}
+
+#carrito:hover{
+  background-color: cornflowerblue;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 header{
   background-color: white;
 }
@@ -26,28 +44,32 @@ body {
   
  }
 
+.logo{
+  position: sticky;
+  left: 40%;
+}
 
 .navMenu{
-  position:absolute;
-  left:30%;
-  top:15%;
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  background-color: cornflowerblue;
 }
 
 .navMenu a {  
+  text-align: center;
+  
   color: rgb(44, 44, 44);
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.3em;
   text-transform: uppercase;
-  display:inline;
-  padding: 15px;
-  width: 80px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
+
+
 .navMenu a:hover {
-  color: cornflowerblue;
+  color:black;
 }
 .linea{
     border-top: 0.1px solid lightgray;
@@ -82,13 +104,13 @@ hr{
 }
 
 .contenido {
+  display: grid;
+  gap: 30px; 
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  justify-content: space-around;
   overflow: hidden;
   width: 80%;
   margin: 0 auto;
-  display: grid;
-  justify-content: space-evenly;
-  grid-template-columns: auto auto auto auto;
-  gap: 50px; 
   align-items: center;
 }
 
@@ -97,11 +119,12 @@ hr{
   margin: 15px;
   width: 220px;
   height: 380px;
-  border-radius: 15px;
-  border-color: lightgray;
-  border-style: solid;
-  border-width: 1px;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: cornflowerblue;
 }
+
+
 
 .card:hover{
   transition: 0.4s;
@@ -109,14 +132,12 @@ hr{
   0.3em 0.3em 1em rgba(0, 0, 0, 0.1);
   cursor: pointer; 
   text-decoration: underline;
-  
+  border-radius: 10px ;
 }
 .image{
   width: 100%;
   height: 210px;
-  border-style: solid;
-  border-color: lightgray;
-  border-width: 1px;
+  
   
 }
 
@@ -171,6 +192,7 @@ footer{
 }
 
 
+
 /*formulario*/
 input[type=text], select, textarea {
   width: 100%;
@@ -184,6 +206,18 @@ input[type=text], select, textarea {
 }
 input[type=email], select, textarea {
   width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#consulta{
+  width: 100%;
+  height:80px;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -207,6 +241,7 @@ input[type=submit]:hover {
 }
 
 .container {
+  margin: auto 50px auto;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
