@@ -44,20 +44,21 @@ body {
   
  }
 
-.logo{
-  position: sticky;
-  left: 42%;
+.son{
+  width: 50%;
+  margin: 0 25%;
+  
 }
 
 .navMenu{
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   background-color: cornflowerblue;
 }
 
-.navMenu a {  
+.navMenu a {
   text-align: center;
-  
   color: rgb(44, 44, 44);
   text-decoration: none;
   font-size: 1.3em;
@@ -107,7 +108,6 @@ hr{
   display: grid;
   gap: 30px; 
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  justify-content: space-around;
   overflow: hidden;
   width: 80%;
   margin: 0 auto;
@@ -116,7 +116,7 @@ hr{
 
 .card{
   overflow: hidden;
-  margin: 15px;
+  margin: 0 auto;
   width: 220px;
   height: 380px;
   border-bottom: 2px;
@@ -163,16 +163,31 @@ hr{
   
 }
 
+button.descripcion2{
+  width: 50%;
+  margin: 20px 25%;
+}
+
 .descripcion2{
   color: white;
   font-size: medium;
   font-weight: 500;
-  padding: 5px 50px 5px;
-  border-radius: 100px;
+  padding:5px;
+  border-radius: 20px;
   border-style: none;
   background-color: rgb(44, 44, 44);
   cursor: pointer;
 }
+
+
+.descripcion2:hover{
+  transition: 0.3s;
+  background-color: white;
+  color: rgb(44, 44, 44);
+  border-color: rgb(44, 44, 44);
+  border-style: solid;
+}
+
 .descripcion2:hover{
   transition: 0.3s;
   background-color: white;
